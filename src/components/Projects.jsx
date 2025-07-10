@@ -13,7 +13,7 @@ export function Projects() {
             <div className="h-px bg-gradient-to-r from-green-500/50 to-transparent flex-grow" />
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {/* Records.xyz - First project as requested */}
+
             <ProjectCard
               title="Records.xyz"
               description="Empowering ENS users with seamless records management across a diverse range of OP-chains"
@@ -23,8 +23,8 @@ export function Projects() {
               isLive
             />
             <ProjectCard
-              title="ENS Registrations Bot 🤖"
-              description="Posts real-time updates on all ENS names registered to Twitter, promoting transparency and awareness within the community."
+              title="ENS Registry"
+              description="Posts real-time updates on all ENS names registrations"
               site="ensregistry.xyz"
               lead="chrismg.eth"
               isLive
@@ -55,7 +55,7 @@ export function Projects() {
             />
             <ProjectCard
               title="OptiNames 🔴"
-              description="Introduces ENS subdomains on the Optimism network, expanding the ENS ecosystem to Layer 2 solutions."
+              description="Introduces ENS subdomains on the Optimism network, claim free ecc.eth subdomains"
               site="optinames.xyz"
               twitter="@optinames"
               lead="stevegachau.eth"
