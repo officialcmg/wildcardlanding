@@ -48,7 +48,7 @@ export function Hero() {
             ))}
         </div>
         <p className="mt-6 text-lg leading-8 text-gray-200">
-          A design-driven approach to building the future of the web. We create beautiful, functional, and accessible digital experiences.
+          We’re the dev crew behind Records.xyz & tools like ENSRedirect, AvatarSync, Wildcards Protocol & cross-chain resolvers—making ENS record management easy, beautiful & built for today’s multi-chain world.
         </p>
         <div className="mt-10 flex items-center justify-center gap-x-6">
           <a
