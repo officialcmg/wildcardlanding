@@ -31,7 +31,7 @@ export function Hero() {
           }}
         />
       </div>
-      <div className="mx-auto max-w-4xl py-32 sm:py-48 lg:py-56 text-center">
+      <div className="mx-auto max-w-4xl pt-24 pb-32 sm:pt-32 sm:pb-40 lg:pt-40 lg:pb-48 text-center">
         <img src={wildcardLogo} alt="Wildcard Labs Logo" className="h-24 mx-auto mb-8" />
         <div className="relative h-20 mb-4 overflow-hidden">
             {phrases.map((phrase, index) => (

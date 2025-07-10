@@ -10,6 +10,13 @@ export function ProjectCard({
   isLive = false,
   isHighlighted = false,
 }) {
+  const leadLinks = {
+    'stevegachau.eth': 'https://x.com/stevegachau',
+    'chrismg.eth': 'https://x.com/chrismgtweets_',
+    'davidwachira.eth': 'https://x.com/davyvete',
+  };
+  const leadLink = leadLinks[lead];
+
   return (
     <div
       className={`backdrop-blur-lg ${isHighlighted ? 'bg-green-500/15' : 'bg-white/5'} rounded-xl border ${isHighlighted ? 'border-green-400/30' : 'border-white/10'} p-6 transition-all hover:transform hover:scale-105 hover:bg-white/10 relative`}
@@ -58,7 +65,18 @@ export function ProjectCard({
         {lead && (
           <div className="flex items-center gap-2">
             <span className="text-green-300 text-sm">Project Lead:</span>
-            <span className="text-white">{lead}</span>
+            {leadLink ? (
+              <a
+                href={leadLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white hover:text-green-400 transition-colors flex items-center gap-1"
+              >
+                {lead} <ExternalLinkIcon size={14} />
+              </a>
+            ) : (
+              <span className="text-white">{lead}</span>
+            )}
           </div>
         )}
       </div>
